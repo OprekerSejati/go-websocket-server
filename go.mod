@@ -1,6 +1,6 @@
 module serCoba
 
-go 1.23.2
+go 1.20
 
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect
