@@ -170,7 +170,7 @@ func broadcastMessage(roomName string, msg map[string]string) {
 }  
   
 func main() {  
-	db.InitDB("root:sayakeren@tcp(localhost:3306)/goWebSocket")  
+	db.InitDB("root:yourpassword@tcp(localhost:3306)/goWebSocket")  
 	http.HandleFunc("/ws", handleConnection)  
 	log.Println("Server started on :8080")  
 	if err := http.ListenAndServe(":8080", nil); err != nil {  
